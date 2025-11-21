@@ -1,0 +1,16 @@
+{
+  "name": "pupillix-frontend",
+  "version": "1.0.0",
+  "description": "Pupillix Frontend - Static Website",
+  "scripts": {
+    "start": "npx http-server -p 8080 -o",
+    "dev": "npx http-server -p 8080 -o"
+  },
+  "keywords": [
+    "pupillix",
+    "frontend",
+    "accessibility"
+  ],
+  "author": "",
+  "license": "MIT"
+}

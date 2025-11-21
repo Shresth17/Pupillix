@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pupillix - AI-Powered Accessibility</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <circle cx="20" cy="20" r="18" stroke="url(#gradient)" stroke-width="3"/>
+                        <circle cx="20" cy="20" r="8" fill="url(#gradient)"/>
+                        <defs>
+                            <linearGradient id="gradient" x1="0" y1="0" x2="40" y2="40">
+                                <stop offset="0%" stop-color="#667eea"/>
+                                <stop offset="100%" stop-color="#764ba2"/>
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                    <span class="logo-text">Pupillix</span>
+                </div>
+                <div class="nav-links">
+                    <a href="#features">Features</a>
+                    <a href="#how-it-works">How It Works</a>
+                    <a href="#about">About</a>
+                    <button class="btn-secondary" id="loginBtn">Login</button>
+                    <button class="btn-primary" id="signupBtn">Get Started</button>
+                </div>
+                <div class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge">🚀 AI-Powered Technology</span>
+                </div>
+                <h1 class="hero-title">
+                    Control Your Computer with
+                    <span class="gradient-text">Just Your Eyes</span>
+                </h1>
+                <p class="hero-description">
+                    Experience the future of accessibility. Pupillix uses advanced AI and computer vision 
+                    to let you control your computer using facial movements and eye blinks - no hands needed.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn-large btn-primary" id="downloadBtn">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M10 14L5 9L6.4 7.6L9 10.2V2H11V10.2L13.6 7.6L15 9L10 14Z" fill="currentColor"/>
+                            <path d="M2 16V18H18V16H2Z" fill="currentColor"/>
+                        </svg>
+                        Download Now
+                    </button>
+                    <button class="btn-large btn-secondary" onclick="document.getElementById('demo-video').scrollIntoView({behavior: 'smooth'})">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M8 5V15L15 10L8 5Z" fill="currentColor"/>
+                        </svg>
+                        Watch Demo
+                    </button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number">478</div>
+                        <div class="stat-label">Facial Landmarks</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">60 FPS</div>
+                        <div class="stat-label">Real-time Tracking</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Hands-Free</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="visual-card">
+                    <div class="face-mesh-demo">
+                        <div class="pulse-ring"></div>
+                        <div class="pulse-ring delay-1"></div>
+                        <div class="face-icon">👁️</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Powerful Features</h2>
+                <p class="section-description">Everything you need for seamless hands-free control</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Facial Landmark Detection</h3>
+                    <p>Advanced AI tracks 478 facial landmarks in real-time using Google's MediaPipe</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🖱️</div>
+                    <h3>Head Movement Control</h3>
+                    <p>Move the cursor naturally by moving your head - precise and intuitive</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👁️</div>
+                    <h3>Eye Blink Clicks</h3>
+                    <p>Left eye blink for left-click, right eye blink for right-click</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚙️</div>
+                    <h3>Custom Calibration</h3>
+                    <p>Personalized calibration ensures optimal performance for every user</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Real-time Processing</h3>
+                    <p>Lightning-fast processing with minimal latency for smooth control</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌐</div>
+                    <h3>Cross-platform</h3>
+                    <p>Works seamlessly on Windows, macOS, and Linux systems</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">How It Works</h2>
+                <p class="section-description">Get started in just 3 simple steps</p>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Download & Install</h3>
+                    <p>Download Pupillix and run the installer. No Python installation required!</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Calibrate</h3>
+                    <p>Follow the guided calibration process to personalize the system for you</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Start Controlling</h3>
+                    <p>Click "Start Capturing" and begin controlling your computer hands-free!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Video Section -->
+    <section id="demo-video" class="demo-section">
+        <div class="container">
+            <div class="demo-content">
+                <h2 class="section-title">See Pupillix in Action</h2>
+                <p class="section-description">Watch how easy it is to control your computer</p>
+                <div class="video-placeholder">
+                    <div class="play-button">▶</div>
+                    <p>Demo video coming soon</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <h2 class="section-title">Mission & Vision</h2>
+                <p class="about-text">
+                    Pupillix is designed to bridge the digital divide by making technology accessible to everyone, 
+                    regardless of physical limitations. Using cutting-edge AI and computer vision, we're empowering 
+                    individuals with mobility impairments to interact with computers through natural facial movements 
+                    and expressions.
+                </p>
+                <div class="tech-stack">
+                    <h3>Built With</h3>
+                    <div class="tech-badges">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">MediaPipe</span>
+                        <span class="tech-badge">OpenCV</span>
+                        <span class="tech-badge">TensorFlow Lite</span>
+                        <span class="tech-badge">Computer Vision</span>
+                        <span class="tech-badge">Deep Learning</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <svg width="32" height="32" viewBox="0 0 40 40" fill="none">
+                            <circle cx="20" cy="20" r="18" stroke="url(#gradient2)" stroke-width="3"/>
+                            <circle cx="20" cy="20" r="8" fill="url(#gradient2)"/>
+                            <defs>
+                                <linearGradient id="gradient2" x1="0" y1="0" x2="40" y2="40">
+                                    <stop offset="0%" stop-color="#667eea"/>
+                                    <stop offset="100%" stop-color="#764ba2"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <span class="logo-text">Pupillix</span>
+                    </div>
+                    <p>Empowering accessibility through innovation</p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://github.com/Shresth17/Pupillix" target="_blank">GitHub</a>
+                    <a href="#features">Features</a>
+                    <a href="#about">About</a>
+                    <a href="mailto:contact@pupillix.com">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Pupillix. Licensed under MIT License.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Welcome Back</h2>
+            <p class="modal-subtitle">Sign in to download Pupillix</p>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" id="loginEmail" placeholder="your@email.com" required>
+                    <small class="form-hint">Enter your email address</small>
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" id="loginPassword" placeholder="Enter your password" required minlength="6">
+                    <small class="form-hint">Enter your password</small>
+                </div>
+                <button type="submit" class="btn-primary btn-full">Sign In</button>
+                <p class="form-footer">
+                    Don't have an account? <a href="#" id="switchToSignup">Sign up</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Get Started</h2>
+            <p class="modal-subtitle">Create an account to download Pupillix</p>
+            <form id="signupForm">
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" id="signupName" placeholder="John Doe" required minlength="2" maxlength="50">
+                    <small class="form-hint">2-50 characters</small>
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" id="signupEmail" placeholder="your@email.com" required>
+                    <small class="form-hint">Enter a valid email address</small>
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" id="signupPassword" placeholder="Create a password" required minlength="6">
+                    <small class="form-hint">Minimum 6 characters</small>
+                </div>
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms">I agree to the Terms of Service and Privacy Policy</label>
+                </div>
+                <button type="submit" class="btn-primary btn-full">Create Account</button>
+                <p class="form-footer">
+                    Already have an account? <a href="#" id="switchToLogin">Sign in</a>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Download Modal -->
+    <div id="downloadModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="success-icon">✓</div>
+            <h2>Download Ready!</h2>
+            <p class="modal-subtitle">Thank you for choosing Pupillix</p>
+            <div class="download-info">
+                <p><strong>Version:</strong> 1.0.0</p>
+                <p><strong>Size:</strong> ~232 MB</p>
+                <p><strong>Platform:</strong> Windows 10/11</p>
+            </div>
+            <a href="https://drive.google.com/file/d/1mCLrdcmrXXq5FoT2x-EqkcHO19FOUVwQ/view?usp=sharing" class="btn-primary btn-full" target="_blank">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M10 14L5 9L6.4 7.6L9 10.2V2H11V10.2L13.6 7.6L15 9L10 14Z" fill="currentColor"/>
+                    <path d="M2 16V18H18V16H2Z" fill="currentColor"/>
+                </svg>
+                Download Pupillix-Setup.zip
+            </a>
+            <p class="download-note">Your download will begin automatically</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
